@@ -1,3 +1,4 @@
+
 import java.util.*;
 /**
  * LotApp
@@ -15,7 +16,7 @@ public class LotApp {
       
    //1回のみの0000-9999のランダム処理
    for(int i=0;i<select;i++){
-    int pickedNum=rand.nextInt(9999);
+    int pickedNum=rand.nextInt(10000);
     
     pickedNums[i]=pickedNum;
     
