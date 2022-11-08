@@ -21,6 +21,7 @@ public class LotApp {
     pickedNums[i]=pickedNum;
     
    }  
+   Arrays.sort(pickedNums);
    System.out.println(Arrays.toString(pickedNums));  
    System.out.println("抽選開始...");
    for(int i=0;i<4;i++){
