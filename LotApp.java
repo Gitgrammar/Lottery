@@ -13,6 +13,8 @@ public class LotApp {
     Random rand=new Random();
     int pickedNums[]=new int[select];
     int selectedNums[]=new int[4];
+    List<String> list=new ArrayList<>();
+    
       
    //1回のみの0000-9999のランダム処理
    for(int i=0;i<select;i++){
@@ -27,11 +29,14 @@ public class LotApp {
    for(int i=0;i<4;i++){
     int selectedNum=rand.nextInt(9);
     System.out.println(selectedNum);
-    selectedNums[i]=selectedNum;
+    String showNum=String.valueOf(selectedNum);
+    list.add(showNum);
+     
     try{Thread.sleep(2000);
     }catch(InterruptedException e){}
    }
-   System.out.println("1等賞"+Arrays.toString(selectedNums).replace(",", ""));
+   String hit=String.join("",list);
+   System.out.println("1等賞"+hit);
    System.out.println("2等賞");
    System.out.println("3等賞");
    System.out.println("4等賞");
