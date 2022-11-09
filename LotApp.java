@@ -39,7 +39,7 @@ public class LotApp {
    list.subList(0, 3);
    System.out.println(list);
    for(int i=0;i<list.size();i++){
-   System.out.println(i+1+"等賞"+list.subList(i, i+3));}
+   System.out.println(i+1+"等賞"+String.join("",list)+list.subList(i,list.size()));}
 
     }
 }
