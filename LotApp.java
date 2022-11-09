@@ -36,8 +36,10 @@ public class LotApp {
     }catch(InterruptedException e){}
    }
    String first=String.join("",list);
-   for(int i=1;i<5;i++){
-   System.out.println(i+"等賞"+first);}
+   list.subList(0, 3);
+   System.out.println(list);
+   for(int i=0;i<list.size();i++){
+   System.out.println(i+1+"等賞"+list.subList(i, i+3));}
 
     }
 }
