@@ -35,10 +35,9 @@ public class LotApp {
     try{Thread.sleep(2000);
     }catch(InterruptedException e){}
    }
-   String hit=String.join("",list);
-   System.out.println("1等賞"+hit);
-   System.out.println("2等賞");
-   System.out.println("3等賞");
-   System.out.println("4等賞");
+   String first=String.join("",list);
+   for(int i=1;i<5;i++){
+   System.out.println(i+"等賞"+first);}
+
     }
 }
