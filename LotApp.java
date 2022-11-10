@@ -38,13 +38,22 @@ public class LotApp {
    }
   
    list.subList(0, 3);
+   String noComma=String.join("",list);
    for(int i=0;i<list.size();i++){
-    System.out.println();
- String noComma=String.join("",list);
-   System.out.println(noComma);
-   System.out.println(i+1+"等賞"+noComma.substring(i,list.size()));}
-    }
-    
-    
-
+ 
+   System.out.println(i+1+"等賞"+noComma.substring(i,list.size()));
+  }
+  int judge=Integer.parseInt(noComma);
+System.out.println(Arrays.toString(pickedNums));
+if(Arrays.asList(pickedNums).contains(judge)){
+  System.out.println("やったね！！");
 }
+else{
+  System.out.println("残念。またトライしてね。");
+}
+  }
+
+    
+   }
+   
+
