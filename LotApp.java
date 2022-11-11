@@ -28,11 +28,11 @@ public class LotApp {
    System.out.println("抽選開始...");
    for(int i=0;i<4;i++){
     int selectedNum=rand.nextInt(9);
-    String coverted=String.valueOf(selectedNum);
+    String converted=String.valueOf(selectedNum);
     
  
-    System.out.println(coverted);
-    list.add(coverted);
+    System.out.println(converted);
+    list.add(converted);
     try{Thread.sleep(2000);
     }catch(InterruptedException e){}
    }
@@ -45,11 +45,13 @@ public class LotApp {
   }
   int judge=Integer.parseInt(noComma);
 System.out.println(Arrays.toString(pickedNums));
-if(Arrays.asList(pickedNums).contains(judge)){
+if(Arrays.asList(pickedNums).contains(noComma)){
   System.out.println("やったね！！");
 }
 else{
   System.out.println("残念。またトライしてね。");
+  System.out.println("当選番号"+noComma);
+  System.out.println(Arrays.toString(pickedNums)+"あなたの選んだ番号");
 }
   }
 
