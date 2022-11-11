@@ -45,13 +45,16 @@ public class LotApp {
   }
   int judge=Integer.parseInt(noComma);
 System.out.println(Arrays.toString(pickedNums));
-if(Arrays.asList(pickedNums).contains(noComma)){
+
+//pickedNums int ,noComma はstring
+
+if(Arrays.asList(pickedNums).contains(judge)){
   System.out.println("やったね！！");
 }
 else{
   System.out.println("残念。またトライしてね。");
-  System.out.println("当選番号"+noComma);
-  System.out.println(Arrays.toString(pickedNums)+"あなたの選んだ番号");
+  System.out.println("当選番号"+judge);
+  System.out.println("これらはあなたの選んだ番号"+Arrays.toString(pickedNums));
 }
   }
 
